@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('mongodb://localhost:27017/week7Lab', function(err){
+mongoose.connect('mongodb://34.126.200.200:27017/week7Lab', function(err){
     if(err){
         return console.log('Mongoose - connection error: ', err);
     }
